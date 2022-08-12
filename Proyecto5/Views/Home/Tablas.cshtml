@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Tablas</title>
+</head>
+<body>
+    <div> 
+        <table border="1">
+            @for (int fila = 1; fila <= 12; fila++)
+            {
+                <tr>
+                    @for (int columna = 1; columna <= 10; columna++)
+                    {
+                        <td>@fila  * @columna = @(fila * columna)</td>
+                    }
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
